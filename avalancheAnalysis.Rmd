@@ -216,5 +216,12 @@ statistically significantly different. In addition, a predictive model in the fo
 
 In the future, this study can be improved by obtaining a better data set by having a sample site that provides 24 hour monitoring and reporting for a full winter season.
 
-The full project can be found here: 
+The full project can be found here: https://github.com/joshbullers/avalanche_project
 
+## Data Sources
+
+Northwest Avalanche Center  
+https://www.nwac.us/observations/
+
+National Resources Conservation Service  
+http://www.wcc.nrcs.usda.gov/snow/snow_map.html
