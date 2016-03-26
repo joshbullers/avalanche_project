@@ -1,0 +1,28 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1458514684594.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "4E80D1A5",
+    "lastKnownWriteTime" : 146028888070,
+    "last_content_update" : 1458514684594,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "y7ywlgdlc3",
+        "caption" : "df_snotelData",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=df_snotelData&cache_key=y7ywlgdlc3",
+        "displayedObservations" : "419184",
+        "environment" : "",
+        "object" : "df_snotelData",
+        "totalObservations" : "419184",
+        "variables" : "7"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

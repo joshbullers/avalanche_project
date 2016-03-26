@@ -1,0 +1,28 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1458793218978.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "65C9B74A",
+    "lastKnownWriteTime" : 4294967302,
+    "last_content_update" : 1458793218978,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "77en9acpqf",
+        "caption" : "df_observedAvalanches",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=df_observedAvalanches&cache_key=77en9acpqf",
+        "displayedObservations" : 148,
+        "environment" : "",
+        "object" : "df_observedAvalanches",
+        "totalObservations" : 148,
+        "variables" : 4
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

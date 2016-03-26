@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "df_fullData <- read.csv('./finalWeather.csv', header = TRUE)\ndf_fullData$date <- as.Date(df_fullData$date, format = '%m/%d/%y')\n\ndf_noSample <- df_fullData[as.character(df_fullData$sawAvalanche) == \"No\",]\ndf_yesSample <- df_fullData[as.character(df_fullData$sawAvalanche) == \"Yes\",]\ndf_noSample <- df_noSample[complete.cases(df_noSample),]\ndf_yesSample <- df_yesSample[complete.cases(df_yesSample),]\n\ncalcPriorDayAverages <- function(df, days) {\n  highName <- sprintf(\"%sDayHighMaxTemp\", days)\n  lowName <- sprintf(\"%sDayLowMinTemp\", days)\n  snowGain <- sprintf(\"%sDaySnowChange\", days)\n  \n  for (count in 1:nrow(df)) {\n    currentSite <- df[count, \"dataCard\"]\n    priorDayDate <- df[count, \"date\"] - days\n    miniDf <- df_fullData[df_fullData$date < df[count,\"date\"] & df_fullData$date >= priorDayDate & df_fullData$dataCard == currentSite,]\n  \n    # Calcs from 3day dataframe\n    df[count, c(highName)] <- max(miniDf$maxTemp)\n    df[count, c(lowName)] <- min(miniDf$minTemp)\n    df[count, c(snowGain)] <- as.numeric(miniDf[nrow(miniDf), \"inches\"]) - as.numeric(miniDf[1,\"inches\"])\n  }\n  return(df)\n}\n\npriorDayNums <- function(df) {\n  \n}\n\n# No sample calculations\nnoMeanMaxTemp <- mean(as.numeric(df_noSample$maxTemp))\nnoMeanMinTemp <- mean(as.numeric(df_noSample$minTemp))\nnoMeanSnowWaterDepth <- mean(as.numeric(df_noSample$inches))\n\ndf_noSample <- calcPriorDayAverages(df_noSample, 3)\ndf_noSample <- calcPriorDayAverages(df_noSample, 7)\n\n# Yes sample calculations\nyesMeanMaxTemp <- mean(as.numeric(df_yesSample$maxTemp))\nyesMeanMinTemp <- mean(as.numeric(df_yesSample$minTemp))\nyesMeanSnowWaterDepth <- mean(as.numeric(df_yesSample$inches))\n\ndf_yesSample <- calcPriorDayAverages(df_yesSample, 3)\ndf_yesSample <- calcPriorDayAverages(df_yesSample, 7)",
+    "created" : 1458876713514.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "188856972",
+    "id" : "4E1D95F0",
+    "lastKnownWriteTime" : 1458882273,
+    "last_content_update" : 1458882273466,
+    "path" : "~/Desktop/Data Science/avalanche_project/analysis.R",
+    "project_path" : "analysis.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

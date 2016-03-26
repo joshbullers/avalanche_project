@@ -1,0 +1,28 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1458971963531.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "E3134CDC",
+    "lastKnownWriteTime" : 4294967296,
+    "last_content_update" : 1458971963531,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "46ks7n4xzf",
+        "caption" : "shuffledFull",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=shuffledFull&cache_key=46ks7n4xzf",
+        "displayedObservations" : 158,
+        "environment" : "",
+        "object" : "shuffledFull",
+        "totalObservations" : 158,
+        "variables" : 4
+    },
+    "relative_order" : 12,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}
